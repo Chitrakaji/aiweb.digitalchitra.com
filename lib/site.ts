@@ -1,9 +1,9 @@
 export const siteConfig = {
-  name: "Aviral Growth",
-  siteUrl: "https://example.com",
+  name: "Digital Chitra",
+  siteUrl: "https://aiweb.digitalchitra.com",
   email: "hello@example.com",
-  whatsappUrl: "https://wa.me/15551234567?text=Hi%2C%20I%27d%20like%20to%20improve%20my%20website%20conversions.",
-  bookingUrl: "https://cal.com/your-booking-link",
+  whatsappUrl: "https://wa.me/9779846058611?text=Hi%2C%20I%27d%20like%20to%20improve%20my%20website%20conversions.",
+  bookingUrl: "#contact",
   navItems: [
     { label: "Services", href: "#services" },
     { label: "How It Works", href: "#process" },

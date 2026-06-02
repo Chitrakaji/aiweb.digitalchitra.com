@@ -3,8 +3,8 @@ import { services } from "@/lib/data";
 
 export function ServicesSection() {
   return (
-    <section id="services" className="section-padding bg-white/70">
-      <div className="container-shell space-y-10">
+    <section id="services" className="menu-section">
+      <div className="container-shell space-y-9 lg:-mt-4">
         <SectionHeading
           eyebrow="What We Do"
           title="We help business owners turn their website into a 24/7 sales machine"
@@ -19,14 +19,14 @@ export function ServicesSection() {
             return (
               <article
                 key={service.title}
-                className="card-surface reveal-up p-6 sm:p-8"
+                className="card-surface reveal-up flex min-h-[19rem] flex-col justify-center p-7 sm:p-8"
                 style={{ animationDelay: `${index * 110}ms` }}
               >
-                <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-slate-950 text-white">
-                  <Icon className="h-6 w-6" />
+                <div className="mb-7 inline-flex h-16 w-16 items-center justify-center rounded-3xl bg-slate-950 text-white">
+                  <Icon className="h-7 w-7" />
                 </div>
-                <h3 className="text-xl font-semibold text-slate-950">{service.title}</h3>
-                <p className="mt-3 text-base leading-7 text-muted">{service.description}</p>
+                <h3 className="text-2xl font-semibold text-slate-950">{service.title}</h3>
+                <p className="mt-4 text-base leading-7 text-muted">{service.description}</p>
               </article>
             );
           })}

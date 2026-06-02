@@ -14,14 +14,14 @@ export function SectionHeading({
   align = "left"
 }: SectionHeadingProps) {
   return (
-    <div className={cn("space-y-4", align === "center" && "mx-auto max-w-3xl text-center")}>
+    <div className={cn("space-y-2.5", align === "center" && "mx-auto max-w-3xl text-center")}>
       <span className="section-label">{eyebrow}</span>
-      <div className="space-y-3">
-        <h2 className="text-balance text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
+      <div className="space-y-2">
+        <h2 className="text-balance text-3xl font-bold tracking-tight text-slate-950 sm:text-[2.35rem]">
           {title}
         </h2>
         {description ? (
-          <p className="text-balance text-base leading-7 text-muted sm:text-lg">{description}</p>
+          <p className="text-balance text-sm leading-6 text-muted sm:text-base">{description}</p>
         ) : null}
       </div>
     </div>

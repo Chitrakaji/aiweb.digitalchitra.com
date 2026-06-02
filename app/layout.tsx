@@ -1,10 +1,19 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Cormorant_Garamond, Poppins } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/lib/site";
 
-const inter = Inter({
+const poppins = Poppins({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-poppins",
+  display: "swap"
+});
+
+const cormorantGaramond = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  variable: "--font-cormorant",
   display: "swap"
 });
 
@@ -13,6 +22,11 @@ export const metadata: Metadata = {
   title: "Website That Generates Customers | Digital Marketing Consultant",
   description:
     "Turn your website into a high-converting sales system that brings consistent leads and revenue. Stop guessing. Start converting.",
+  icons: {
+    icon: "/icon.jpg",
+    shortcut: "/icon.jpg",
+    apple: "/icon.jpg"
+  },
   openGraph: {
     title: "Website That Generates Customers | Digital Marketing Consultant",
     description:
@@ -48,8 +62,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-background">
-      <body className={`${inter.className} bg-background text-foreground antialiased`}>
+    <html lang="en" className="bg-background" suppressHydrationWarning>
+      <body
+        className={`${poppins.variable} ${cormorantGaramond.variable} bg-background text-foreground antialiased`}
+        suppressHydrationWarning
+      >
         {children}
       </body>
     </html>

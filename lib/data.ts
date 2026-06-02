@@ -160,12 +160,12 @@ export const faqItems = [
       "If your website is already getting attention but not producing leads, fixing that gap can pay for itself much faster than pouring more money into traffic."
   },
   {
-    question: "What if it doesn’t work?",
+    question: "What if it doesn't work?",
     answer:
       "No honest consultant can promise exact numbers, but the process is built around proven conversion principles instead of guesswork, trends, or vanity design."
   },
   {
-    question: "I’ve tried before...",
+    question: "I've tried before...",
     answer:
       "That usually means the site looked fine but lacked strategy. The difference here is aligning structure, messaging, trust, and calls to action as one system."
   },

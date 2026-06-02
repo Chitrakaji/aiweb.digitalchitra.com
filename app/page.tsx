@@ -1,6 +1,8 @@
 import { Header } from "@/components/header";
+import { ContactSection } from "@/sections/contact-section";
 import { CTASection } from "@/sections/cta-section";
 import { FAQSection } from "@/sections/faq-section";
+import { FooterMenuSection } from "@/sections/footer-menu-section";
 import { HeroSection } from "@/sections/hero-section";
 import { IncludedSection } from "@/sections/included-section";
 import { ProcessSection } from "@/sections/process-section";
@@ -23,8 +25,10 @@ export default function HomePage() {
         <ValueSections />
         <IncludedSection />
         <ProofSection />
+        <ContactSection />
         <FAQSection />
         <CTASection />
+        <FooterMenuSection />
       </main>
     </>
   );

@@ -7,11 +7,11 @@ const iconMap = [Users, BadgeDollarSign, BarChart3];
 export function SolutionSection() {
   return (
     <section className="section-padding">
-      <div className="container-shell grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-        <div className="space-y-6">
+      <div className="container-shell grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+        <div className="space-y-4">
           <SectionHeading
             eyebrow="The Solution"
-            title="You don’t need just a website. You need a Website Revenue System."
+            title="You don't need just a website. You need a Website Revenue System."
             description="A strong website does more than look modern. It attracts, qualifies, reassures, and moves visitors toward action."
           />
         </div>
@@ -21,9 +21,9 @@ export function SolutionSection() {
             const Icon = iconMap[index];
 
             return (
-              <div key={item} className="card-surface p-6">
-                <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-50 text-primary">
-                  <Icon className="h-6 w-6" />
+              <div key={item} className="card-surface p-5">
+                <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-stone-100 text-primary">
+                  <Icon className="h-5 w-5" />
                 </div>
                 <p className="text-lg font-semibold text-slate-950">{item}</p>
               </div>
